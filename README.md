@@ -11,7 +11,7 @@ The RF modulator replacement not only provides a better than stock video output 
 1. Onboard S-Video output (chroma attenuated to 300mVp-p) for direct connection to a modern S-Video capable display or upscaler
 2. Signal passthrough to the mainboard AV DIN connector for mono audio, composite and luma/chroma output (for Commodore luma/chroma compatible monitors)
 3. Adjustable luma and chroma output [optional]
-4. [Hard reset circuit](https://ist.uwaterloo.ca/~schepers/MJK/hard_reset.html) [optional] [C64 only]
+4. [Hard reset circuit](https://ist.uwaterloo.ca/~schepers/MJK/hard_reset.html) [optional] (C64 only)
 5. Composite colour disable [optional]
 6. Direct luma/chroma connection from the VIC-II(e) [optional] (highly recommended for the C128)
 7. Direct audio output via 3.5mm TRS connector - this can be wired for a standard single SID (mono) setup or a dual/stereo SID setup*
@@ -27,7 +27,7 @@ Before ordering components it is important to discuss the optional features and 
 
 ![pots vs fixed values](https://github.com/TheRetroChannel/C128-C64-Shortboard-RF-replacement/blob/main/Images/sb%20pots%20vs%20fixed.png)
 
-* OPT2 Hard reset circuit and optional reset button (C64 only): The PCB includes a hard reset circuit (the function of which is explained in the link above). Connections must be made to the EXROM (PLA pin 23) and RESET lines (CPU pin 40). This can be utilised in two ways: 
+* OPT2 Hard reset circuit and optional reset button (C64 ONLY): The PCB includes a hard reset circuit (the function of which is explained in the link above). Connections must be made to the EXROM (PLA pin 23) and RESET lines (CPU pin 40). This can be utilised in two ways: 
 1. Install a push button switch directly on the RF modulator PCB - this occupies the same space as the 3.5mm audio output, so you can only have one or the other (mono audio output will still be available from the C64 mainboard AV DIN connector)
 
 ![audio vs reset](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement/blob/main/Images/audio%20vs%20reset%20sw.png)
@@ -37,7 +37,7 @@ Before ordering components it is important to discuss the optional features and 
  
 ![cvbs enable](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement/blob/main/Images/cvbs%20en.png)
 
-* OPT4 Direct luma/chroma from the VIC-II(e): Much like the composite colour issue and checkerboard pattern detailed above, the C64/128 also has very poor separation of chroma and luma signals on the mainboard itself - they run across the board in parallel with each other and alongside a bunch of digital signals. So another way to minimise the checkerboard interference and jailbars is to bypass the luma/chroma signals running across the mainboard and instead run them directly to the RF modulator PCB. There are pin headers labelled EXT CHR|LUM for connection of these signals on the RF modulator side, and the jumpers on the board next to these connections should be cut to prevent these signals from going back into the C64/128 mainbaord. You can use 40 pin socket with pins 14 and 15 for the C64 (48 pin with pins 16 and 17 for the C128) on the socket bent outwards, then solder wires directly to the bent socket legs - so from the bottom you should have the C64/128 VIC-II(e) socket, bent pins socket, VIC-II(e) IC. Just remeber to isolate the bent pins from the mainboard socket with a bit of tape. This will also raise the height of the VIC-II(e), you may be able to fit the lid and heatsink back on (it will be raised at the VIC-II(e) end) or if it no longer fits you should definitely install a [heatsink](https://www.aliexpress.com/item/1005003083684958.html) (INSERT EXAMPLE PIC OF LC BYPASS)
+* OPT4 Direct luma/chroma from the VIC-II: Much like the composite colour issue and checkerboard pattern detailed above, the C64/128 also has very poor separation of chroma and luma signals on the mainboard itself - they run across the board in parallel with each other and alongside a bunch of digital signals. So another way to minimise the checkerboard interference and jailbars is to bypass the luma/chroma signals running across the mainboard and instead run them directly to the RF modulator PCB. There are pin headers labelled EXT CHR|LUM for connection of these signals on the RF modulator side, and the jumpers on the board next to these connections should be cut to prevent these signals from going back into the C64/128 mainbaord. You can use 40 pin socket with pins 14 and 15 for the C64 (48 pin socket with pins 16 and 17 for the C128) on the socket bent outwards, then solder wires directly to the bent socket legs - so from the bottom you should have the C64/128 VIC-II mainboard socket, bent pins socket, VIC-II IC. Just remeber to isolate the bent pins from the mainboard socket with a bit of tape. This will also raise the height of the VIC-II(e), you may be able to fit the lid and heatsink back on (it will be raised at the VIC-II end) or if it no longer fits you should definitely install a [heatsink](https://www.aliexpress.com/item/1005003083684958.html) (INSERT EXAMPLE PIC OF LC BYPASS)
 
 ![extLC](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement/blob/main/Images/extlc.png)
 
