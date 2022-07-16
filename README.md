@@ -97,11 +97,11 @@ A: The C128 employs a different method to reset the machine (at least via the bu
 
 Q: I noticed the longboard version has an option to adjust the composite mixing, why is this not available with this version?
 
-A: It was removed during my testing phase, the shortboard and 128 VIC-II(e) seem to require a lower value resistor on the chroma output, and a higher value capacitor for composite mixing. The maximum trimmer value I could find that would fit is 120pF, and this version requires 200pF. If you really want this feature, you will need to bodge in a 120pF trimmer AND a 100pF ceramic capacitor at C1.
+A: It was removed during my testing phase, the shortboard and 128 VIC-II(e) require a lower value resistor on the chroma output, and a higher value capacitor for composite mixing. The maximum trimmer value I could find that would fit is 120pF, and this version requires 200pF. If you really want this feature, you will need to bodge in a 120pF trimmer AND a 100pF ceramic capacitor in parallel at C1.
 
 Q: I think something is wrong, can you help?
 
-A: Check the [schematic](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement/blob/main/Images/Schematic_C64%20LONGBOARD%20RF%20MOD%20REPLACEMENT.png)
+A: Check the [schematic](https://github.com/TheRetroChannel/C128-C64-Shortboard-RF-replacement/blob/main/Images/Schematic_C128_C64%20SHORTBOARD%20RF%20MOD%20REPLACEMENT_2022-07-16.png)
 
 Q: Wow, this is fantastic! How can I ever repay you?
 
