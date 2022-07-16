@@ -2,7 +2,7 @@
 
 ![Board](https://github.com/TheRetroChannel/C128-C64-Shortboard-RF-replacement/blob/main/Images/c64sb%20rf%20full.png)
 
-This is a RF modulator replacement for the Commodore 128 and shortboard Commodore 64 ASSY# 250469 - for ASSY# KU-14194HB, 250407, 250425 and 250466 variants see [C64 longboard RF replacement](INSERT LINK). Note ASSY #326298 is not compatible with either of these RF modulator replacements.
+This is a RF modulator replacement for the Commodore 128 and shortboard Commodore 64 ASSY# 250469 - for ASSY# KU-14194HB, 250407, 250425 and 250466 variants see the [C64 longboard RF replacement](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement). Note ASSY #326298 is not compatible with either of these RF modulator replacements.
 
 I have included as much detail as possible on this page but comparison shots are available [HERE](NEED NEW LINK), and a YouTube build and installtion video is available [HERE](INSERT LINK)
 
