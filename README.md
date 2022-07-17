@@ -19,6 +19,10 @@ The RF modulator replacement not only provides a better than stock video output 
 
 "*" The 3.5mm audio output and hard reset button share the same space on the PCB (where the channel selector switch would normally be), as such only one can be installed on the board. Installing the 3.5mm audio out is recommended, the hard reset circuit can still be utilised with a case mounted tactile switch. See Optional Stuff
 
+# C128 Comparison shots
+
+All before and after images are in [this folder](https://github.com/TheRetroChannel/C128-C64-Shortboard-RF-replacement/tree/main/Images/comparison). The easiest way to compare them is to open each one in a new tab, or download each one and open in an image viewer, and just flick between each open image. Note the EasyFlash3 main menu was chosen as it includes a lot of detail. Pay close attention to the different coloured dots around the selection boxes, the text especially with "ll"'s and "m"'s, the blue and purple background, and the "developed by skoe" text. All shots were with a very cheap capture device (it literally just says "video converter" on the device), my plasma tv shows a remarkably clean image but it proved too diffcult to get a good photo of that display :-/
+
 # Optional stuff
 Although everything in the rear half of the board (AV connectors, hard reset circuit, pin headers) can be left unpopulated, it is recommended to install all components now so all features are available should you wish to use them in the future. The pads and through-holes for the RF modulator are easily damaged with multiple removals and reinstallations of RF modulator replacements. Ask me how I know!
 
@@ -37,9 +41,13 @@ Before ordering components it is important to discuss the optional features and 
  
 ![cvbs enable](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement/blob/main/Images/cvbs%20en.png)
 
-* OPT4 Direct luma/chroma from the VIC-II: Much like the composite colour issue and checkerboard pattern detailed above, the C64/128 also has very poor separation of chroma and luma signals on the mainboard itself - they run across the board in parallel with each other and alongside a bunch of digital signals. So another way to minimise the checkerboard interference and jailbars is to bypass the luma/chroma signals running across the mainboard and instead run them directly to the RF modulator PCB. There are pin headers labelled EXT CHR|LUM for connection of these signals on the RF modulator side, and the jumpers on the board next to these connections should be cut to prevent these signals from going back into the C64/128 mainbaord. You can use 40 pin socket with pins 14 and 15 for the C64 (48 pin socket with pins 16 and 17 for the C128) on the socket bent outwards, then solder wires directly to the bent socket legs - so from the bottom you should have the C64/128 VIC-II mainboard socket, bent pins socket, VIC-II IC. Just remeber to isolate the bent pins from the mainboard socket with a bit of tape. This will also raise the height of the VIC-II, you may be able to fit the lid and heatsink back on (it will be raised at the VIC-II end) or if it no longer fits you should definitely install a [heatsink](https://www.aliexpress.com/item/1005003083684958.html) (INSERT EXAMPLE PIC OF LC BYPASS)
+* OPT4 Direct luma/chroma from the VIC-II: Much like the composite colour issue and checkerboard pattern detailed above, the C64/128 also has very poor separation of chroma and luma signals on the mainboard itself - they run across the board in parallel with each other and alongside a bunch of digital signals. So another way to minimise the checkerboard interference and jailbars is to bypass the luma/chroma signals running across the mainboard and instead run them directly to the RF modulator PCB. There are pin headers labelled EXT CHR|LUM for connection of these signals on the RF modulator side, and the jumpers on the board next to these connections should be cut to prevent these signals from going back into the C64/128 mainbaord. You can use 40 pin socket with pins 14 and 15 for the C64 (48 pin socket with pins 16 and 17 for the C128) on the socket bent outwards, then solder wires directly to the bent socket legs - so from the bottom you should have the C64/128 VIC-II mainboard socket, bent pins socket, VIC-II IC. Just remeber to isolate the bent pins from the mainboard socket with a bit of tape. This will also raise the height of the VIC-II, you may be able to fit the lid and heatsink back on (it will be raised at the VIC-II end) or if it no longer fits you should definitely install a [heatsink](https://www.aliexpress.com/item/1005003083684958.html)
 
 ![extLC](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement/blob/main/Images/extlc.png)
+
+![BYPASS](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement/blob/main/Images/VIC-II%20BYPASS.jpg)
+
+![SANDWICH](https://github.com/TheRetroChannel/C64-Longboard-RF-replacement/blob/main/Images/VIC-II%20SANDWICH.jpg)
 
 * OPT5 Direct mono/stereo audio output: Installing a 3.5mm audio socket allows for either mono or stereo audio output. This is especially useful if you only require s-video output as both the s-video and audio connector utilise the exisitng C64/128 case holes where the RF output and channel selector switch would be - in this configuration you do not need to use the mainboard AV DIN connector at all. A pin header is used to connect the stereo (right) channel audio for dual SID configs and the associated jumper must be cut separate the left and right channels.
 
@@ -110,5 +118,3 @@ A: It's free, and that's exactly how I wanted it to be. Although it may look sim
 # To-do
 Just a reminder to myself to do the following:
 * Film video and insert link here
-* Grab some new comparison shots of stock RF vs this one
-* Take an actual pic of the LC bypass
