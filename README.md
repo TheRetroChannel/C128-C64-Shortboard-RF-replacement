@@ -1,3 +1,5 @@
+## This repository is now archived - please see https://github.com/TheRetroChannel/Commodore-64-Shortboard-and-C128-RF-Replacement-V2 for the latest version
+
 # C128/C64 Shortboard-RF-replacement
 
 ![Board](https://github.com/TheRetroChannel/C128-C64-Shortboard-RF-replacement/blob/main/Images/c64sb%20rf%20full.png)
